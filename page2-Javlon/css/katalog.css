@@ -1,3 +1,29 @@
+/* golos-text-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/golos-text-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/golos-text-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/golos-text-v4-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/golos-text-v4-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+    url('../fonts/golos-text-v4-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    url('../fonts/golos-text-v4-latin-regular.svg#GolosText') format('svg'); /* Legacy iOS */
+}
+/* golos-text-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/golos-text-v4-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/golos-text-v4-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/golos-text-v4-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/golos-text-v4-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+    url('../fonts/golos-text-v4-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    url('../fonts/golos-text-v4-latin-600.svg#GolosText') format('svg'); /* Legacy iOS */
+}
 * {
     margin: 0;
     padding: 0;
@@ -389,4 +415,39 @@ footer {
         font-weight: 400;
         line-height: 16px; 
     }
+}
+
+/* //////////uslugi-section/////////// */
+
+.uslugi {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.uslugi-box {
+    align-items: start;
+    display: flex;
+    gap: 16px;
+}
+.uslugi-box-img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid  #E9E9E9;
+    
+    
+}
+
+.uslugi-box h3 {
+    color: var(--text-black, #161616);
+    font-family: Golos;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.6px;
 }
